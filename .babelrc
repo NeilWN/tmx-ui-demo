@@ -1,0 +1,24 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "loose": false,
+        "modules": "commonjs",
+        "spec": true,
+        "useBuiltIns": "usage",
+        "corejs": "2.6.9"
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    [
+      "import",
+      {
+        "libraryName": "view-design",
+        "libraryDirectory": "src/components"
+      }
+    ]
+  ]
+}

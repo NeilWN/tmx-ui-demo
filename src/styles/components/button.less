@@ -1,0 +1,77 @@
+@css-prefix: tmx-;
+// Color
+@primary-color: #2d8cf0;
+@info-color: #2db7f5;
+@success-color: #19be6b;
+@processing-color: @primary-color;
+@warning-color: #ff9900;
+@error-color: #ed4014;
+@normal-color: #e6ebf1;
+@link-color: #2d8cf0;
+@link-hover-color: tint(@link-color, 20%);
+@link-active-color: shade(@link-color, 5%);
+@selected-color: fade(@primary-color, 90%);
+@tooltip-color: #fff;
+@subsidiary-color: #808695;
+@rate-star-color: #f5a623;
+@white: #fff;
+@black: #000;
+@btn-prefix-cls: ~'@{css-prefix}btn';
+
+.@{btn-prefix-cls} {
+  min-width: 60px;
+  height: 36px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  border-width: 1px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid transparent;
+  padding: 0 10px;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+  &-default {
+    color: #333;
+    border-color: #555;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: rgba(@primary-color, 0.3);
+    }
+  }
+  &-primary {
+    color: #fff;
+    background-color: @primary-color;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: @primary-color;
+    }
+  }
+  &-info {
+    color: #fff;
+    background-color: @info-color;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: @info-color;
+    }
+  }
+  &-success {
+    color: #fff;
+    background-color: @success-color;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: @success-color;
+    }
+  }
+}

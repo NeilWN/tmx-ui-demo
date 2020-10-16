@@ -1,0 +1,84 @@
+{
+  "name": "tmx-ui-demo",
+  "version": "0.1.0",
+  "main": "lib/tmx-ui.min.js",
+  "scripts": {
+    "build:style": "gulp --gulpfile build/gen-style.js",
+    "build:prod": "webpack --config build/webpack.prod.js",
+    "build:components": "webpack --config build/webpack.component.js",
+    "dist": "npm run build:style && npm run build:prod && npm run build:components",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "async-validator": "^3.0.4",
+    "core-js": "2.6.9",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-import": "^1.13.1",
+    "chai": "^4.2.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "2.1.1",
+    "file-loader": "^4.2.0",
+    "gh-pages": "^2.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-less": "^4.0.2",
+    "gulp-rename": "^1.4.0",
+    "karma": "^4.2.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage": "^2.0.1",
+    "karma-mocha": "^1.3.0",
+    "karma-sinon-chai": "^2.0.2",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "^0.0.32",
+    "karma-webpack": "^4.0.2",
+    "less": "^3.10.2",
+    "less-loader": "^5.0.0",
+    "mocha": "^6.2.0",
+    "node-sass": "^4.12.0",
+    "rimraf": "^3.0.0",
+    "sass-loader": "^7.3.1",
+    "sinon": "^7.4.1",
+    "sinon-chai": "^3.3.0",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.1.0",
+    "view-design": "^4.4.0",
+    "vue-loader": "^15.7.1",
+    "vue-style-loader": "^4.1.2",
+    "vuepress": "^1.0.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "engines": {
+    "node": ">=8.9.1",
+    "npm": ">=5.5.1",
+    "yarn": ">=1.3.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

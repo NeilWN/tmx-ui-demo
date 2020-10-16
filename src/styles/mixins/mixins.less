@@ -1,0 +1,9 @@
+@pre: 'tmx';  /* 组件库的样式前缀 */
+
+.b(@block, @content) {
+  @B: @pre+'-'+@block;
+
+  .@{B} {
+    @content();
+  }
+}
