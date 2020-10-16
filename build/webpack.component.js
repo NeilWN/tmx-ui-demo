@@ -12,12 +12,12 @@ Object.keys(components).forEach((key) => {
 })
 
 module.exports = merge(webpackCommonConfig, {
-  devtool: 'cheap-source-map',
+  devtool: 'cheap-module-eval-source-map',
   mode: 'production',
   entry: entries,
   output: {
     path: path.resolve(__dirname, '../lib'),
-    publicPath: '/lib/',
+    publicPath: '/lib/components/',
     filename: 'components/[name].js',
     chunkFilename: 'components/[id].js',
     // library: 'lime-ui',

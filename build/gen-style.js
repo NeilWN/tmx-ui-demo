@@ -11,7 +11,7 @@ function buildCss(cb) {
     .pipe(less())
     .pipe(autoprefixer())
     .pipe(cleanCSS())
-    .pipe(rename('lime-ui.css'))
+    .pipe(rename('tmx-ui.css'))
     .pipe(gulp.dest('../lib/styles'))
   cb()
 }
