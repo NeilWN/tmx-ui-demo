@@ -3,7 +3,7 @@ const cleanCSS = require('gulp-clean-css')
 const less = require('gulp-less')
 const rename = require('gulp-rename')
 const autoprefixer = require('gulp-autoprefixer')
-const components = require('./components.json')
+const components = require('../components.json')
 
 function buildCss(cb) {
   gulp

@@ -6,7 +6,7 @@ const webpackCommonConfig = require('./webpack.common.js');
 process.env.NODE_ENV = 'production';
 
 module.exports = merge(webpackCommonConfig, {
-  devtool: 'cheap-source-map',
+  devtool: 'cheap-module-eval-source-map',
   mode: "production",
   entry: {
     main: path.resolve(__dirname, '../src/index.js')  // 将src下的index.js 作为入口点

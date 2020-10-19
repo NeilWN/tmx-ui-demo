@@ -4,7 +4,7 @@ import TmxCard from './components/card'
 
 const components = {
   Button,
-  TmxCard
+  TmxCard,
 }
 
 const install = function(Vue, options = {}) {
@@ -13,4 +13,12 @@ const install = function(Vue, options = {}) {
   })
 }
 
-export default install
+export default {
+  install,
+  // ...components,
+}
+
+export {
+  Button,
+  TmxCard
+}

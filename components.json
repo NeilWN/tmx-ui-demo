@@ -1,0 +1,4 @@
+{
+  "button": "./src/components/button/index.js",
+  "card": "./src/components/card/index.js"
+}

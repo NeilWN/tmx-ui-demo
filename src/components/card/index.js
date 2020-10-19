@@ -1,2 +1,7 @@
-import TmxCard from './card.vue'
-export default TmxCard
+import Card from './card.vue'
+
+Card.install = function(Vue) {
+  Vue.component(Card.name, Card)
+}
+
+export default Card
